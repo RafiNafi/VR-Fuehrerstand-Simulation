@@ -44,7 +44,7 @@ public class InteractionDetection : MonoBehaviour
 
         // Update the tooltip's position and text
         currentTooltip.transform.position = position;
-        currentTooltip.transform.position += new Vector3(0, 0.3f, 0);
+        currentTooltip.transform.position += new Vector3(0, 0.2f, 0);
         currentTooltip.transform.LookAt(Camera.main.transform);
         currentTooltip.transform.Rotate(0, 180, 0);
         currentTooltip.GetComponentInChildren<TextMeshPro>().text = text;
