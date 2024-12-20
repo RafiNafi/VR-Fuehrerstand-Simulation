@@ -3,7 +3,77 @@ guid: b721895ab4e30e64cb4c23b874b18dc1
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Grey
+    second: {fileID: 2100000, guid: 25ea6f40d33726c4b8600bb565f16326, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: black
+    second: {fileID: 2100000, guid: 5fa6aa47a1b8b854b9414e49d588a00f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dark_black
+    second: {fileID: 2100000, guid: 7856498158e7ef04588e787f00850bca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dark_black.001
+    second: {fileID: 2100000, guid: e56eafd1244fdb74fae271a8edf49857, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dark_grey
+    second: {fileID: 2100000, guid: 81389033dc3f7164a97d768ff8512a98, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dark_red
+    second: {fileID: 2100000, guid: 457ec29b4db65874c8bd0b1568bf38e4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: db_blue
+    second: {fileID: 2100000, guid: e7812c477c66c9e41943ad7cefd3cfdf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: floor
+    second: {fileID: 2100000, guid: 3e6ebec776f9d034192d4493cce53fcd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass
+    second: {fileID: 2100000, guid: 7ba7f181beeb27945aec7f37f87969ba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: light_grey
+    second: {fileID: 2100000, guid: c161bad7acb43f046bc579fb0501fbb3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metall_plate
+    second: {fileID: 2100000, guid: 557e75c08722a2b489c9d90e8edb5435, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: red
+    second: {fileID: 2100000, guid: 67e3ab3001dcbea4e92a7cc0bd147f1e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: schraube
+    second: {fileID: 2100000, guid: a105885b34eac494c8d8717d1daf9de6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: yellow
+    second: {fileID: 2100000, guid: 6b63cb667e5ed8a4db98c7878aab166e, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
