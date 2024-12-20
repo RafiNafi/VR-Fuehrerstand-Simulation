@@ -1,16 +1,17 @@
 using UnityEngine;
 using TMPro;
+using System;
 
 public class InteractionDetection : MonoBehaviour
 {
-    public GameObject tooltipPrefab; // Assign your tooltip prefab
+    public GameObject tooltipPrefab;
     private GameObject currentTooltip; // Instance of the tooltip
     public Transform controllerTransform; // VR controller transform
     public float rayLength = 2f; // Length of the ray
 
     void Update()
     {
-        // Shoot a ray from the controller
+
         Ray ray = new Ray(controllerTransform.position, controllerTransform.forward);
         RaycastHit hit;
 
@@ -22,7 +23,7 @@ public class InteractionDetection : MonoBehaviour
             if (tooltipTrigger != null)
             {
                 ShowTooltip(hit.point, tooltipTrigger.tooltipText, hit.collider.gameObject);
-   
+
             }
             else
             {
