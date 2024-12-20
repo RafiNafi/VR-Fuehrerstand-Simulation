@@ -1585,7 +1585,7 @@ PrefabInstance:
     - target: {fileID: 507793840201583838, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 2fbf3e1f07b8e8944b8a0d5b48cf7e89, type: 2}
+      objectReference: {fileID: 2100000, guid: 6b63cb667e5ed8a4db98c7878aab166e, type: 2}
     - target: {fileID: 919132149155446097, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
       propertyPath: m_Name
       value: fuehrerstand
@@ -1593,7 +1593,7 @@ PrefabInstance:
     - target: {fileID: 1349729200128462484, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 0f112e784a2e5d545996cc9879495432, type: 2}
+      objectReference: {fileID: 2100000, guid: 67e3ab3001dcbea4e92a7cc0bd147f1e, type: 2}
     - target: {fileID: 3858773085189211394, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
