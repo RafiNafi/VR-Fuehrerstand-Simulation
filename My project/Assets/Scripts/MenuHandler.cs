@@ -35,7 +35,7 @@ public class MenuHandler : MonoBehaviour
         }
         else if (exameMode.isOn)
         {
-
+            toggleAllTooltips(false);
         }
     }
 
