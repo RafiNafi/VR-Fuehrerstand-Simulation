@@ -20,7 +20,7 @@ public class InteractionDetection : MonoBehaviour
             // Check if the hit object has a TooltipTrigger script
             TooltipTrigger tooltipTrigger = hit.collider.GetComponent<TooltipTrigger>();
 
-            if (tooltipTrigger != null)
+            if (tooltipTrigger != null && tooltipTrigger.enabled)
             {
                 ShowTooltip(hit.point, tooltipTrigger.tooltipText, hit.collider.gameObject);
 

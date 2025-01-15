@@ -25,6 +25,30 @@ public class MenuHandler : MonoBehaviour
 
     public void startMode()
     {
+        if (freeMode.isOn)
+        {
+            toggleAllTooltips(true);
+        }
+        else if (processMode.isOn)
+        {
+            toggleAllTooltips(false);
+        }
+        else if (exameMode.isOn)
+        {
 
+        }
+    }
+
+    public void toggleAllTooltips(bool activate)
+    {
+        MonoBehaviour[] scripts = FindObjectsOfType<MonoBehaviour>();
+
+        foreach (MonoBehaviour script in scripts)
+        {
+            if (script.GetType().Name is "TooltipTrigger")
+            {
+                script.enabled = activate;
+            }
+        }
     }
 }
