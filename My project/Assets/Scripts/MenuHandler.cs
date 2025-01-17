@@ -27,10 +27,10 @@ public class MenuHandler : MonoBehaviour
         persistentFilePath = Application.persistentDataPath + "/scenarios.json";
         sourcePath = Application.streamingAssetsPath + "/scenarios.json";
 
-        if (!File.Exists(persistentFilePath))
-        {
-            copyFileToPersistentPath();
-        }
+        //if (!File.Exists(persistentFilePath))
+        //{
+        copyFileToPersistentPath();
+        //}
 
         sc = loadScenario();
 
@@ -156,7 +156,8 @@ public class MenuHandler : MonoBehaviour
         }
         else
         {
-            File.Copy(sourcePath, persistentFilePath);
+            File.Copy(sourcePath, persistentFilePath, true);
+            
         }
 
     }
