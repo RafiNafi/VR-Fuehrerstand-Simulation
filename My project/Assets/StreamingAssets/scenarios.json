@@ -1,0 +1,32 @@
+{
+    "scenarios": [
+        {
+            "name": "Einfaches Anfahren",
+            "objects": ["Object1", "Object2", "Object3"]
+        },
+        {
+            "name": "Einfaches Bremsen",
+            "objects": ["ObjectX", "ObjectY"]
+        },
+        {
+            "name": "Notbremsung",
+            "objects": ["ObjectX", "ObjectY"]
+        },
+        {
+            "name": "Aufrüsten / Vorbereitungen vor der Fahrt",
+            "objects": ["ObjectX", "ObjectY"]
+        },
+        {
+            "name": "Abrüsten / Abschließende Aufgaben bei Beendigung einer Fahrt",
+            "objects": ["ObjectX", "ObjectY"]
+        },
+        {
+            "name": "Gewöhnliche Personenfahrt",
+            "objects": ["ObjectX", "ObjectY"]
+        },
+        {
+            "name": "Verhalten bei Signalstörung",
+            "objects": ["ObjectX", "ObjectY"]
+        }
+    ]
+}
