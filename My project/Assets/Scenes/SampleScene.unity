@@ -530,6 +530,46 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 91320943}
   m_CullTransparentMesh: 1
+--- !u!1 &104067800 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -6462254611834294333, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
+  m_PrefabInstance: {fileID: 2010016697}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &104067804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 104067800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 597e4efa4c166514a85970c76518a6e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltipText: "Makrofon: \nAkustisches Warnsignal geben. Hoher und tiefer Ton m\xF6glich. "
+--- !u!64 &104067805
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 104067800}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8970254053390239863, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
 --- !u!1001 &108499110
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3382,6 +3422,87 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   m_IsOn: 0
+--- !u!1 &833690567 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8021990390715134155, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
+  m_PrefabInstance: {fileID: 2010016697}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &833690571
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 833690567}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2618275363016049374, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
+--- !u!114 &833690572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 833690567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 597e4efa4c166514a85970c76518a6e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltipText: "Fahreinstellung Vorw\xE4rts: \nStellt den Richtungswender auf vorw\xE4rts.
+    Fahrtrichtung nach vorne. "
+--- !u!1 &869336778 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 228505877065069014, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
+  m_PrefabInstance: {fileID: 2010016697}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &869336782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 869336778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 597e4efa4c166514a85970c76518a6e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltipText: "Brems\xFCberlastung: \r\n\xDCberlastungsschutz f\xFCr Bremssysteme. "
+--- !u!64 &869336783
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 869336778}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5583156518533194873, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
 --- !u!4 &884816952 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 31061fbf9103fbe468686bdcf1126114, type: 3}
@@ -3720,6 +3841,128 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 31061fbf9103fbe468686bdcf1126114, type: 3}
+--- !u!1 &1005696751 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -954254864609480992, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
+  m_PrefabInstance: {fileID: 2010016697}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1005696755
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1005696751}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5531613614241357873, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
+--- !u!114 &1005696756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1005696751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 597e4efa4c166514a85970c76518a6e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltipText: "Hauptschl\xFCssel: \nF\xFChrerstand aktivieren/deaktivieren mit einem
+    Schl\xFCssel."
+--- !u!1 &1008062475 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2346193987603000012, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
+  m_PrefabInstance: {fileID: 2010016697}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1008062479
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008062475}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6428411263675396536, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
+--- !u!114 &1008062480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008062475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 597e4efa4c166514a85970c76518a6e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltipText: "Fahreinstellung Neutral: \nStellt den Richtungswender auf neutral.
+    Keine Fahrtrichtung. "
+--- !u!1 &1011785273 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -3911937775873395879, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
+  m_PrefabInstance: {fileID: 2010016697}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1011785277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011785273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 597e4efa4c166514a85970c76518a6e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltipText: "Luftkompressor:\nDruckluft f\xFCr Bremsen erzeugen. "
+--- !u!64 &1011785278
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011785273}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4807654525592299500, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
 --- !u!1 &1018432269 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3358945834817227340, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
@@ -5176,6 +5419,47 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 1247016403104118001, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
+--- !u!1 &1494233578 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3626247726256903220, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
+  m_PrefabInstance: {fileID: 2010016697}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1494233582
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1494233578}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6448336729673360100, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
+--- !u!114 &1494233583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1494233578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 597e4efa4c166514a85970c76518a6e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltipText: "Fahreinstellung R\xFCckw\xE4rts: \nStellt den Richtungswender auf
+    r\xFCckw\xE4rts. Fahrtrichtung nach hinten. "
 --- !u!1 &1499512190
 GameObject:
   m_ObjectHideFlags: 0
@@ -5827,6 +6111,46 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 31061fbf9103fbe468686bdcf1126114, type: 3}
   m_PrefabInstance: {fileID: 1553105352}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1553415925 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4531739338227466370, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
+  m_PrefabInstance: {fileID: 2010016697}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1553415929
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1553415925}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7235557823441479439, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
+--- !u!114 &1553415930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1553415925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 597e4efa4c166514a85970c76518a6e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltipText: "F\xFChrerbremsventiltrennung: \nBremsventil vom System trennen/schlie\xDFen"
 --- !u!1 &1562688589
 GameObject:
   m_ObjectHideFlags: 0
@@ -8700,6 +9024,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8434341813200929382, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1720047012}
+    - targetCorrespondingSourceObject: {fileID: -3911937775873395879, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1011785278}
+    - targetCorrespondingSourceObject: {fileID: -3911937775873395879, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1011785277}
     - targetCorrespondingSourceObject: {fileID: -1946466657926071184, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 156744985}
@@ -8748,6 +9078,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -3230150724870690963, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1619170735}
+    - targetCorrespondingSourceObject: {fileID: -6462254611834294333, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 104067805}
+    - targetCorrespondingSourceObject: {fileID: -6462254611834294333, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 104067804}
     - targetCorrespondingSourceObject: {fileID: -1816361326855260421, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1144124585}
@@ -8778,6 +9114,42 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -580541917176003059, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1876992749}
+    - targetCorrespondingSourceObject: {fileID: 3626247726256903220, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1494233583}
+    - targetCorrespondingSourceObject: {fileID: 3626247726256903220, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1494233582}
+    - targetCorrespondingSourceObject: {fileID: 2346193987603000012, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1008062480}
+    - targetCorrespondingSourceObject: {fileID: 2346193987603000012, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1008062479}
+    - targetCorrespondingSourceObject: {fileID: 8021990390715134155, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 833690572}
+    - targetCorrespondingSourceObject: {fileID: 8021990390715134155, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 833690571}
+    - targetCorrespondingSourceObject: {fileID: -954254864609480992, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1005696756}
+    - targetCorrespondingSourceObject: {fileID: -954254864609480992, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1005696755}
+    - targetCorrespondingSourceObject: {fileID: 4531739338227466370, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1553415930}
+    - targetCorrespondingSourceObject: {fileID: 4531739338227466370, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1553415929}
+    - targetCorrespondingSourceObject: {fileID: 228505877065069014, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 869336783}
+    - targetCorrespondingSourceObject: {fileID: 228505877065069014, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 869336782}
     - targetCorrespondingSourceObject: {fileID: -7029948723529949830, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1614142816}
