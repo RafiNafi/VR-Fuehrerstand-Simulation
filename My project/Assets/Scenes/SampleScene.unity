@@ -911,6 +911,47 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 31061fbf9103fbe468686bdcf1126114, type: 3}
+--- !u!1 &250123988 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -5568371526223589888, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
+  m_PrefabInstance: {fileID: 2010016697}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &250123992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 250123988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 597e4efa4c166514a85970c76518a6e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltipText: "Makrofon: \nAkustisches Warnsignal geben. Hoher und tiefer Ton wird
+    gegeben. "
+--- !u!64 &250123993
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 250123988}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2534964839176971238, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
 --- !u!1 &293235884
 GameObject:
   m_ObjectHideFlags: 0
@@ -4808,6 +4849,48 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -8302102485596996044, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
+--- !u!1 &1269549054 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -6763858364670572316, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
+  m_PrefabInstance: {fileID: 2010016697}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1269549058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269549054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 597e4efa4c166514a85970c76518a6e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltipText: "Sicherheitsfahrschalter (SIFA): \nKontrolliert Fahreraktivit\xE4t
+    zur Sicherheit. Zugf\xFChrer muss sp\xE4testens alle 30 Sekunden den Taster bet\xE4tigen,
+    ansonsten wird der Zug zwangsgebremst. "
+--- !u!64 &1269549059
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269549054}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8385836491182413749, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
 --- !u!1 &1277987898
 GameObject:
   m_ObjectHideFlags: 0
@@ -9252,6 +9335,12 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 589778145}
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: -6763858364670572316, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1269549059}
+    - targetCorrespondingSourceObject: {fileID: -6763858364670572316, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1269549058}
     - targetCorrespondingSourceObject: {fileID: 8009987137999418058, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 805979186}
@@ -9264,6 +9353,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1502877291743220047, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1823581631}
+    - targetCorrespondingSourceObject: {fileID: -5568371526223589888, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 250123993}
+    - targetCorrespondingSourceObject: {fileID: -5568371526223589888, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 250123992}
     - targetCorrespondingSourceObject: {fileID: 8112241284504300804, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1524036910}
