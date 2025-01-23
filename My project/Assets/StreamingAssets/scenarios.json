@@ -1,32 +1,24 @@
 {
     "scenarios": [
         {
-            "name": "Einfaches Anfahren",
-            "objects": ["Object1", "Object2", "Object3"]
-        },
-        {
-            "name": "Einfaches Bremsen",
-            "objects": ["ObjectX", "ObjectY"]
-        },
-        {
-            "name": "Notbremsung",
-            "objects": ["ObjectX", "ObjectY"]
-        },
-        {
             "name": "Aufrüsten / Vorbereitungen vor der Fahrt",
-            "objects": ["knopf.007", "hebel cylinder.001", "hebel eckig.002", "knopf.006", "knopf.008"]
+            "objects": ["knopf.batterie", "knopf.hauptschluessel", "hebel.stromabnehmer", "hebel.hauptschalter", "knopf.fahreinstellung.vorwaerts", "knopf.fuehrerbremsventiltrennung", "knopf.federspeicherbremse", "hebel.lokbremse", "hebel.zugspitzensignal"]
         },
         {
-            "name": "Abrüsten / Abschließende Aufgaben bei Beendigung einer Fahrt",
-            "objects": ["ObjectX", "ObjectY"]
+            "name": "Normales Fahren",
+            "objects": ["drehhebel.kombihebel", "knopf.sifa", "hebel.zb.wachsam", "drehhebel.kombihebel", "hebel.zb.frei", "drehhebel.kombihebel"]
         },
         {
-            "name": "Gewöhnliche Personenfahrt",
-            "objects": ["ObjectX", "ObjectY"]
+            "name": "Halten am Bahnhof",
+            "objects": ["drehhebel.fuehrerbremsventil", "hebel.lokbremse", "knopf.tuerkontrolle.rechts", "knopf.tuerkontrolle.schließen", "hebel.lokbremse", "drehhebel.kombihebel"]
         },
         {
-            "name": "Verhalten bei Signalstörung",
-            "objects": ["ObjectX", "ObjectY"]
+            "name": "Notfall",
+            "objects": ["knopf.sos"]
+        },
+        {
+            "name": "Abrüsten / Beendigung der Fahrt",
+            "objects": ["drehhebel.fuehrerbremsventil", "drehhebel.kombihebel", "hebel.lokbremse", "hebel.zugspitzensignal", "knopf.fahreinstellung.neutral", "hebel.hauptschalter", "knopf.hauptschluessel"]
         }
     ]
 }
