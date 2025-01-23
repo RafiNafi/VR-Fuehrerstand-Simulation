@@ -14,7 +14,7 @@
         },
         {
             "name": "Aufrüsten / Vorbereitungen vor der Fahrt",
-            "objects": ["ObjectX", "ObjectY"]
+            "objects": ["knopf.007", "hebel cylinder.001", "hebel eckig.002", "knopf.006", "knopf.008"]
         },
         {
             "name": "Abrüsten / Abschließende Aufgaben bei Beendigung einer Fahrt",
