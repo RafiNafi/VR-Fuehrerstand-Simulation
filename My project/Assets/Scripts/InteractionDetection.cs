@@ -48,7 +48,8 @@ public class InteractionDetection : MonoBehaviour
         currentTooltip.transform.position += new Vector3(0, 0.2f, 0);
         currentTooltip.transform.LookAt(Camera.main.transform);
         currentTooltip.transform.Rotate(0, 180, 0);
-        currentTooltip.GetComponentInChildren<TextMeshPro>().text = text;
+        TextMeshPro tmp = currentTooltip.GetComponentInChildren<TextMeshPro>();
+        tmp.text = text;
     }
 
     void HideTooltip()

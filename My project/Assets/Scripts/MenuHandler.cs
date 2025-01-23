@@ -71,10 +71,30 @@ public class MenuHandler : MonoBehaviour
         {
             if (scenario.name == name)
             {
-                //TODO
+                foreach (string objectName in scenario.objects) 
+                {
+
+                }
             }
         }
         
+    }
+
+    public void addOutline(string objectName)
+    {
+        GameObject targetObject = GameObject.Find(objectName);
+
+        if (targetObject != null)
+        {
+            if (targetObject.GetComponent<Outline>() == null)
+            {
+                Outline outline = targetObject.AddComponent<Outline>();
+            }
+        }
+        else
+        {
+            Debug.LogError("GameObject not found in scene!");
+        }
     }
 
     public void toggleAllTooltips(bool activate)
