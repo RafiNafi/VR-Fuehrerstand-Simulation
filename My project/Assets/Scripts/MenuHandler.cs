@@ -85,8 +85,13 @@ public class MenuHandler : MonoBehaviour
             removeOutline(obj);
         }
 
-        currentScenario = new List<string>();
+        clearList();
         startbtn.GetComponent<UnityEngine.UI.Outline>().enabled = false;
+    }
+
+    public void clearList()
+    {
+        currentScenario = new List<string>();
     }
 
     public void startScenario()
@@ -120,11 +125,12 @@ public class MenuHandler : MonoBehaviour
                 }
             }
         }
-        else
+        else if (currentScenario.Count > 0)
         {
             startbtn.GetComponent<UnityEngine.UI.Outline>().enabled = false;
             completeScreen.gameObject.SetActive(true);
             print("Scenario End");
+            clearList();
         }
     }
 
