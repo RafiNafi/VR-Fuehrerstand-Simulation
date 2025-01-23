@@ -7,6 +7,7 @@ using System.IO;
 using UnityEngine.Playables;
 using System.Xml;
 using UnityEngine.InputSystem;
+using UnityEditor;
 
 public class MenuHandler : MonoBehaviour
 {
@@ -14,11 +15,18 @@ public class MenuHandler : MonoBehaviour
     public Toggle processMode;
     public Toggle exameMode;
     public TMP_Dropdown selectProcess;
+    public Button startbtn;
+
+    public Canvas completeScreen;
 
     private string persistentFilePath;
     private string sourcePath;
 
     ScenarioCollection sc;
+
+    List<string> currentScenario = new List<string>();
+    int index = 0;
+
 
     // Start is called before the first frame update
     void Start()
@@ -47,20 +55,38 @@ public class MenuHandler : MonoBehaviour
 
     public void startMode()
     {
+        prepareScenario();
+
         if (freeMode.isOn)
         {
             toggleAllTooltips(true);
         }
         else if (processMode.isOn)
         {
-            toggleAllTooltips(false);
+            startbtn.GetComponent<UnityEngine.UI.Outline>().enabled = true;
+            toggleAllTooltips(true);
             startScenario();
         }
         else if (exameMode.isOn)
         {
+            startbtn.GetComponent<UnityEngine.UI.Outline>().enabled = true;
             toggleAllTooltips(false);
             startScenario();
         }
+    }
+
+    public void prepareScenario()
+    {
+        completeScreen.gameObject.SetActive(false);
+        index = 0;
+
+        foreach (string obj in currentScenario)
+        {
+            removeOutline(obj);
+        }
+
+        currentScenario = new List<string>();
+        startbtn.GetComponent<UnityEngine.UI.Outline>().enabled = false;
     }
 
     public void startScenario()
@@ -71,13 +97,35 @@ public class MenuHandler : MonoBehaviour
         {
             if (scenario.name == name)
             {
-                foreach (string objectName in scenario.objects) 
-                {
+                currentScenario = scenario.objects;
+                addOutline(currentScenario[index]);
 
-                }
+                break;
             }
         }
         
+    }
+
+    public void goToNextObject(string currentObjectName)
+    {
+        if (currentScenario.Count > index)
+        {
+            if (currentObjectName == currentScenario[index])
+            {
+                removeOutline(currentScenario[index]);
+                index++;
+                if (currentScenario.Count > index)
+                {
+                    addOutline(currentScenario[index]);
+                }
+            }
+        }
+        else
+        {
+            startbtn.GetComponent<UnityEngine.UI.Outline>().enabled = false;
+            completeScreen.gameObject.SetActive(true);
+            print("Scenario End");
+        }
     }
 
     public void addOutline(string objectName)
@@ -89,11 +137,23 @@ public class MenuHandler : MonoBehaviour
             if (targetObject.GetComponent<Outline>() == null)
             {
                 Outline outline = targetObject.AddComponent<Outline>();
+                outline.OutlineWidth = 4;
+                outline.OutlineColor = Color.red;
             }
         }
-        else
+    }
+
+    public void removeOutline(string objectName)
+    {
+        GameObject targetObject = GameObject.Find(objectName);
+
+        if (targetObject != null)
         {
-            Debug.LogError("GameObject not found in scene!");
+            if (targetObject.GetComponent<Outline>() != null)
+            {
+                Destroy(targetObject.GetComponent<Outline>());
+
+            }
         }
     }
 

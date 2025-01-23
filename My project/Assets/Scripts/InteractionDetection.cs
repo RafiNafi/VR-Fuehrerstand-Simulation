@@ -9,6 +9,8 @@ public class InteractionDetection : MonoBehaviour
     public Transform controllerTransform; // VR controller transform
     public float rayLength = 2f; // Length of the ray
 
+    public MenuHandler menuHandler;
+
     void Update()
     {
 
@@ -17,13 +19,14 @@ public class InteractionDetection : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit, rayLength))
         {
-            // Check if the hit object has a TooltipTrigger script
+            // Check if hit object has TooltipTrigger script
             TooltipTrigger tooltipTrigger = hit.collider.GetComponent<TooltipTrigger>();
 
             if (tooltipTrigger != null && tooltipTrigger.enabled)
             {
                 ShowTooltip(hit.point, tooltipTrigger.tooltipText, hit.collider.gameObject);
 
+                menuHandler.goToNextObject(hit.collider.gameObject.name);
             }
             else
             {
@@ -43,7 +46,6 @@ public class InteractionDetection : MonoBehaviour
             currentTooltip = Instantiate(tooltipPrefab, position, Quaternion.identity);
         }
 
-        // Update the tooltip's position and text
         currentTooltip.transform.position = position;
         currentTooltip.transform.position += new Vector3(0, 0.2f, 0);
         currentTooltip.transform.LookAt(Camera.main.transform);
