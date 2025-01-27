@@ -1296,7 +1296,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63e5b22097b7194449a727e289b93a82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animationName: 
+  animationName: Makro
+--- !u!95 &250124002
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 250123988}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7bb4eec07a81ede4086b44144983296e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &293235884
 GameObject:
   m_ObjectHideFlags: 0
@@ -6762,28 +6784,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animationName: 
---- !u!95 &1145305050
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1145305036}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 005e53ae1b925394180cab50add7c19c, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1210778052 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8961359253771211100, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
@@ -7151,7 +7151,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63e5b22097b7194449a727e289b93a82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animationName: 
+  animationName: SIFA
+--- !u!95 &1269549068
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269549054}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 83b1deef0a1d03a46aacf88c9f751026, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1277987898
 GameObject:
   m_ObjectHideFlags: 0
@@ -13934,6 +13956,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -6763858364670572316, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1269549063}
+    - targetCorrespondingSourceObject: {fileID: -6763858364670572316, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1269549068}
     - targetCorrespondingSourceObject: {fileID: 8009987137999418058, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 805979186}
@@ -13958,6 +13983,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -5568371526223589888, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 250123997}
+    - targetCorrespondingSourceObject: {fileID: -5568371526223589888, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 250124002}
     - targetCorrespondingSourceObject: {fileID: 8112241284504300804, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1524036910}
@@ -14117,9 +14145,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -3167620316459934421, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1145305045}
-    - targetCorrespondingSourceObject: {fileID: -3167620316459934421, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1145305050}
     - targetCorrespondingSourceObject: {fileID: -3230150724870690963, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1619170736}
