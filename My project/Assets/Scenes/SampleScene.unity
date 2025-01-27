@@ -2302,11 +2302,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4579454407841743219, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
---- !u!4 &538622085 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2871854915827847855, guid: 65eb6b98091a5734ba9d9ca871cef69a, type: 3}
-  m_PrefabInstance: {fileID: 1825262782}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &549833222 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 31061fbf9103fbe468686bdcf1126114, type: 3}
@@ -5479,6 +5474,17 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 7437234146403850911, guid: b721895ab4e30e64cb4c23b874b18dc1, type: 3}
+--- !u!114 &1030119218 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2871854915827847850, guid: 65eb6b98091a5734ba9d9ca871cef69a, type: 3}
+  m_PrefabInstance: {fileID: 1825262782}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caff514de9b15ad48ab85dcff5508221, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1033842275
 GameObject:
   m_ObjectHideFlags: 0
@@ -12959,9 +12965,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tooltipPrefab: {fileID: 9134704125085096898, guid: 60cf1b321c05c6c46b0de004ae54960b, type: 3}
-  controllerTransform: {fileID: 538622085}
   rayLength: 5
   menuHandler: {fileID: 589778146}
+  controllerRight: {fileID: 1030119218}
+  cooldownTime: 1
+  grabAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Grab
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: be61dba1-3b06-4e4e-90de-22e1f9825c55
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings:
+      - m_Name: 
+        m_Id: 3ecec627-18cf-4080-b664-15c6f71fe35b
+        m_Path: <XRController>{RightHand}/{GripButton}
+        m_Interactions: 
+        m_Processors: 
+        m_Groups: 
+        m_Action: Grab
+        m_Flags: 0
+      m_Flags: 0
+    m_Reference: {fileID: 0}
 --- !u!4 &1965100823
 Transform:
   m_ObjectHideFlags: 0

@@ -125,13 +125,15 @@ public class MenuHandler : MonoBehaviour
                 }
             }
         }
-        else if (currentScenario.Count > 0)
+
+        if (currentScenario.Count == index)
         {
             startbtn.GetComponent<UnityEngine.UI.Outline>().enabled = false;
             completeScreen.gameObject.SetActive(true);
             print("Scenario End");
             clearList();
         }
+
     }
 
     public void addOutline(string objectName)
