@@ -7,7 +7,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class ButtonClick : MonoBehaviour
 {
     private Animator animator;
-    [SerializeField] private string animationTrigger = "Pressed";
+    [SerializeField] public String animationName;
 
     private void Start()
     {
@@ -25,7 +25,7 @@ public class ButtonClick : MonoBehaviour
 
     private void OnSelectEntered(SelectEnterEventArgs arg0)
     {
-        animator.SetTrigger(animationTrigger);
+        GetComponent<Animator>().Play(animationName, -1, 0f);
         Debug.Log("Button Clicked");
     }
 }
