@@ -21,6 +21,8 @@ public class InteractionDetection : MonoBehaviour
 
     public InputActionProperty grabAction;
 
+    int clickCounter = 0;
+
     private void Start()
     {
         grabAction.action.Enable();
@@ -54,8 +56,28 @@ public class InteractionDetection : MonoBehaviour
                 {
                     lastClickTime = Time.time;
                     menuHandler.goToNextObject(hit.collider.gameObject.name);
-                    Debug.Log("Interacted with " + hit.collider.gameObject.name);
+                    clickCounter = 0;
 
+                    Debug.Log("Interacted correctly with " + hit.collider.gameObject.name);
+
+                }
+            }
+            else if(tooltipTrigger != null && menuHandler.exameMode.isOn)
+            {
+
+                if(IsTriggerPressed(controllerRight) && IsClickAllowed() && grabAction.action.triggered)
+                {
+
+                    lastClickTime = Time.time;
+                    if (clickCounter < 1)
+                    {
+                        clickCounter++;
+                    }
+                    else
+                    {
+                        clickCounter = 0;
+                        menuHandler.makeCurrentOutlineVisible();
+                    }
                 }
             }
 

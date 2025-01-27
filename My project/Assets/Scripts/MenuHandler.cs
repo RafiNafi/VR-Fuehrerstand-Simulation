@@ -103,12 +103,35 @@ public class MenuHandler : MonoBehaviour
             if (scenario.name == name)
             {
                 currentScenario = scenario.objects;
-                addOutline(currentScenario[index]);
+
+                if (processMode.isOn)
+                {
+                    addOutline(currentScenario[index], Color.red);
+                }
+                else if (exameMode.isOn)
+                {
+                    addOutline(currentScenario[index], new Color(1,0,0,0));
+                }
 
                 break;
             }
         }
         
+    }
+
+    public void makeCurrentOutlineVisible()
+    {
+        GameObject targetObject = GameObject.Find(currentScenario[index]);
+
+        if (targetObject != null)
+        {
+            Outline outline = targetObject.GetComponent<Outline>();
+
+            if (outline != null)
+            {
+                outline.OutlineColor = new Color(1,0,0,1);
+            }
+        }
     }
 
     public void goToNextObject(string currentObjectName)
@@ -121,7 +144,14 @@ public class MenuHandler : MonoBehaviour
                 index++;
                 if (currentScenario.Count > index)
                 {
-                    addOutline(currentScenario[index]);
+                    if (processMode.isOn)
+                    {
+                        addOutline(currentScenario[index], Color.red);
+                    }
+                    else if (exameMode.isOn)
+                    {
+                        addOutline(currentScenario[index], new Color(1, 0, 0, 0));
+                    }
                 }
             }
         }
@@ -136,7 +166,7 @@ public class MenuHandler : MonoBehaviour
 
     }
 
-    public void addOutline(string objectName)
+    public void addOutline(string objectName, Color c)
     {
         GameObject targetObject = GameObject.Find(objectName);
 
@@ -146,7 +176,7 @@ public class MenuHandler : MonoBehaviour
             {
                 Outline outline = targetObject.AddComponent<Outline>();
                 outline.OutlineWidth = 4;
-                outline.OutlineColor = Color.red;
+                outline.OutlineColor = c;
             }
         }
     }

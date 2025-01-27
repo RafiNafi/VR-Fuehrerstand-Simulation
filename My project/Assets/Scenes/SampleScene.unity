@@ -12981,7 +12981,7 @@ MonoBehaviour:
       m_SingletonActionBindings:
       - m_Name: 
         m_Id: 3ecec627-18cf-4080-b664-15c6f71fe35b
-        m_Path: <XRController>{RightHand}/{GripButton}
+        m_Path: <XRController>/{GripButton}
         m_Interactions: 
         m_Processors: 
         m_Groups: 
